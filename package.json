@@ -11,7 +11,8 @@
 		"node_modules"
 	],
 	"scripts": {
-		"start": "nodemon --quiet app.js"
+		"old": "nodemon --quiet built/app.js",
+		"dev": "tsc-watch --onSuccess \"node ./built/app.js\""
 	},
 	"keywords": [],
 	"author": "",
